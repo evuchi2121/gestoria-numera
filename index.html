@@ -19,29 +19,33 @@
 
     .header {
       background-color: #0B1E3F;
-      padding: 20px 0;
+      padding: 20px 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      color: white;
     }
 
     .logo {
-      max-width: 400px;
+      max-width: 350px;
       width: 100%;
       height: auto;
-      margin-bottom: 10px;
     }
 
     .header-text {
+      color: white;
       font-size: 18px;
-      margin-bottom: 15px;
+      margin-top: 10px;
     }
 
     .nav-links {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
-      padding: 0 20px 10px;
+      flex-wrap: wrap;
+      width: 100%;
+      background-color: #0B1E3F;
+      padding: 10px 30px;
     }
 
     .nav-links a {
@@ -79,7 +83,8 @@
     }
 
     strong {
-      color: #0B1E3F;
+      color: inherit;
+      font-weight: bold;
     }
 
     .appointment {
@@ -128,16 +133,11 @@
       border-radius: 10px;
     }
 
-    @media (max-width: 768px) {
-      .nav-links {
-        flex-direction: column;
-        align-items: center;
-      }
+    .closed-days h3 {
+      color: #0B1E3F;
+    }
 
-      .nav-links a {
-        margin: 8px 0;
-      }
-
+    @media (max-width: 600px) {
       .card {
         padding: 20px;
       }
@@ -157,15 +157,16 @@
   <div class="header">
     <img src="gestoria-numera-1994.png" alt="Logotipo Gestoría Númera" class="logo"/>
     <div class="header-text">Números claros, futuro seguro</div>
-    <div class="nav-links">
-      <a href="quienes-somos.html">Quienes Somos</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#contacto">Contacto</a>
-      <a href="#horario">Horario</a>
-      <a href="#dias-cierre">Días de Cierre</a>
-      <a href="#direccion">Dirección</a>
-      <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
-    </div>
+  </div>
+
+  <div class="nav-links">
+    <a href="quienes-somos.html">Quienes Somos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#horario">Horario</a>
+    <a href="#dias-cierre">Días de Cierre</a>
+    <a href="#direccion">Dirección</a>
+    <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
   </div>
 
   <div class="card" id="servicios">
@@ -180,8 +181,7 @@
     <h3>Contacto</h3>
     <p>
       <a href="mailto:gestorianúmera@gmail.com">Correo electrónico</a><br>
-      <a href="tel:+34923605202">Teléfono</a><br>
-      <a href="tel:+34923605202">Fax</a><br>
+      <a href="tel:+34923605202">Teléfono</a> / <a href="tel:+34923605202">Fax</a><br>
       <a href="tel:+34678172303">Móvil: 678 172 303</a>
     </p>
   </div>
