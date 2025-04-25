@@ -21,6 +21,9 @@
       background-color: #0B1E3F;
       text-align: center;
       padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .logo {
@@ -32,7 +35,6 @@
     .header-text {
       color: white;
       font-size: 24px;
-      margin-top: 10px;
     }
 
     .card {
@@ -101,6 +103,18 @@
     }
 
     /* Calendario */
+    .closed-days {
+      margin-top: 30px;
+      text-align: center;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .closed-days h3 {
+      color: #0B1E3F;
+    }
+
     .calendar {
       margin-top: 30px;
       text-align: center;
@@ -147,13 +161,28 @@
     <h3>Contacto</h3>
     <p>
       <a href="mailto:gestorianúmera@gmail.com">Correo electrónico</a><br>
-      <a href="tel:+34923605202">Teléfono / Fax: 923 605 202</a><br>
-      Móvil: 678 172 303
+      <a href="tel:+34923605202">Teléfono</a> / <a href="tel:+34923605202">Fax</a><br>
+      <a href="tel:+349678172303">Móvil: 678 172 303</a>
     </p>
 
     <h3>Horario</h3>
     <p>Lunes a Viernes:<br>
        09:00 - 14:00 / 16:00 - 18:00</p>
+
+    <h3>Días de cierre</h3>
+    <div class="closed-days">
+      <h3>La gestoría estará cerrada los siguientes días:</h3>
+      <ul>
+        <li>1 de enero - Año Nuevo</li>
+        <li>6 de enero - Reyes Magos</li>
+        <li>Semana Santa (Viernes Santo)</li>
+        <li>1 de mayo - Día del Trabajo</li>
+        <li>15 de agosto - Asunción de la Virgen</li>
+        <li>12 de octubre - Día de la Hispanidad</li>
+        <li>8 de diciembre - Inmaculada Concepción</li>
+        <li>25 de diciembre - Navidad</li>
+      </ul>
+    </div>
 
     <h3>Dirección</h3>
     <p>C/ Escalante nº25 bajo<br>
@@ -170,11 +199,6 @@
       <textarea name="Comentarios" placeholder="Motivo de la cita (opcional)" rows="4"></textarea>
       <input type="submit" value="Enviar solicitud">
     </form>
-  </div>
-
-  <div class="calendar">
-    <h3>Días festivos en España</h3>
-    <iframe src="https://www.calendario-365.es/calendario-2025-espana.html" frameborder="0" height="600px"></iframe>
   </div>
 
 </body>
