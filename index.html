@@ -24,6 +24,7 @@
       justify-content: space-between;
       align-items: center;
       text-align: center;
+      position: relative;
     }
 
     .logo {
@@ -37,6 +38,28 @@
       font-size: 24px;
     }
 
+    .header-links {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .header-links a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .header-links a:hover {
+      text-decoration: underline;
+    }
+
     .nav-links {
       text-align: center;
       margin-top: 20px;
@@ -44,7 +67,7 @@
 
     .nav-links a {
       margin: 0 15px;
-      color: #0B1E3F; /* Azul del encabezado */
+      color: #0B1E3F;
       text-decoration: none;
       font-weight: bold;
       font-size: 18px;
@@ -160,7 +183,10 @@
   <div class="header">
     <img src="gestoria-numera-1994.png" alt="Logotipo Gestoría Númera" class="logo"/>
     <div class="header-text">Números claros, futuro seguro</div>
-    <img src="gestoria-numera-1994.png" alt="Logotipo Gestoría Númera" class="logo"/>
+    <div class="header-links">
+      <a href="quienes-somos.html">Quienes Somos</a>
+      <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+    </div>
   </div>
 
   <div class="nav-links">
@@ -169,6 +195,7 @@
     <a href="#horario">Horario</a>
     <a href="#dias-cierre">Días de Cierre</a>
     <a href="#direccion">Dirección</a>
+    <a href="#cita">Solicitar Cita</a>
   </div>
 
   <div class="card" id="servicios">
@@ -227,12 +254,6 @@
       <textarea name="Comentarios" placeholder="Motivo de la cita (opcional)" rows="4"></textarea>
       <input type="submit" value="Enviar solicitud">
     </form>
-  </div>
-
-  <!-- Botones fuera del formulario -->
-  <div class="buttons-container" style="text-align: center; margin-top: 20px;">
-    <a href="quienes-somos.html"><button class="btn">Quienes Somos</button></a>
-    <a href="preguntas-frecuentes.html"><button class="btn">Preguntas Frecuentes</button></a>
   </div>
 
 </body>
