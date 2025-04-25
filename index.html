@@ -20,39 +20,36 @@
     .header {
       background-color: #0B1E3F;
       padding: 20px 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       text-align: center;
+      color: white;
     }
 
     .logo {
-      max-width: 250px;
+      max-width: 300px;
       width: 100%;
       height: auto;
+      margin-bottom: 10px;
     }
 
     .header-text {
-      color: white;
       font-size: 24px;
-      margin-top: 10px;
+      margin-bottom: 15px;
     }
 
     .nav-links {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      width: 100%;
-      margin-top: 10px;
-      padding: 0 30px;
+      align-items: center;
+      padding: 0 20px 10px;
     }
 
     .nav-links a {
-      margin: 0 15px;
+      margin: 5px 10px;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .nav-links a:hover {
@@ -131,21 +128,16 @@
       border-radius: 10px;
     }
 
-    .closed-days h3 {
-      color: #0B1E3F;
-    }
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
 
-    .calendar {
-      margin-top: 30px;
-      text-align: center;
-    }
+      .nav-links a {
+        margin: 8px 0;
+      }
 
-    .calendar iframe {
-      width: 100%;
-      border: none;
-    }
-
-    @media (max-width: 600px) {
       .card {
         padding: 20px;
       }
@@ -178,8 +170,8 @@
 
   <div class="card" id="servicios">
     <h3>Servicios</h3>
-    <p>Asesoría Integral<br>
-       Tramitaciones Administrativas<br>
+    <p><strong>Asesoría Integral</strong><br>
+       <strong>Tramitaciones Administrativas</strong><br>
        Impuestos y Declaraciones<br>
        Seguros</p>
   </div>
@@ -188,8 +180,9 @@
     <h3>Contacto</h3>
     <p>
       <a href="mailto:gestorianúmera@gmail.com">Correo electrónico</a><br>
-      <a href="tel:+34923605202">Teléfono</a> / <a href="tel:+34923605202">Fax</a><br>
-      <a href="tel:+349678172303">Móvil: 678 172 303</a>
+      <a href="tel:+34923605202">Teléfono</a><br>
+      <a href="tel:+34923605202">Fax</a><br>
+      <a href="tel:+34678172303">Móvil: 678 172 303</a>
     </p>
   </div>
 
@@ -228,7 +221,7 @@
       <input type="text" name="Nombre" placeholder="Tu nombre" required>
       <input type="email" name="Email" placeholder="Tu email" required>
       <input type="tel" name="Teléfono" placeholder="Tu teléfono">
-      <input type="date" name="Fecha de cita" placeholder="Seleccionar cita" required>
+      <input type="date" name="Fecha de cita" required>
       <textarea name="Comentarios" placeholder="Motivo de la cita (opcional)" rows="4"></textarea>
       <input type="submit" value="Enviar solicitud">
     </form>
