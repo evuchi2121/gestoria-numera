@@ -124,6 +124,15 @@
       border-radius: 10px;
     }
 
+    a.selectable {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a.selectable:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 768px) {
       .nav-links {
         flex-direction: column;
@@ -167,20 +176,19 @@
   <div class="card" id="servicios">
     <h3>Servicios</h3>
     <p>
-      Asesoría Integral<br>
-      Tramitaciones Administrativas<br>
-      Impuestos y Declaraciones<br>
-      Seguros
+      <span style="color: #0B1E3F;">Asesoría Integral</span><br>
+      <span style="color: #0B1E3F;">Tramitaciones Administrativas</span><br>
+      <span style="color: #0B1E3F;">Impuestos y Declaraciones</span><br>
+      <span style="color: #0B1E3F;">Seguros</span>
     </p>
   </div>
 
   <div class="card" id="contacto">
     <h3>Contacto</h3>
     <p>
-      <a href="mailto:gestorianúmera@gmail.com">Correo electrónico</a><br>
-      <a href="tel:+34923605202">Teléfono</a><br>
-      <a href="tel:+34923605202">Fax</a><br>
-      <a href="tel:+34678172303">Móvil: 678 172 303</a>
+      Correo electrónico: <a href="mailto:gestorianumera@gmail.com" class="selectable">gestorianumera@gmail.com</a><br>
+      Tel. / Fax: <a href="tel:+34923605202" class="selectable">923605202</a><br>
+      Móvil: <a href="tel:+34678172303" class="selectable">678172303</a>
     </p>
   </div>
 
