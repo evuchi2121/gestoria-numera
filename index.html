@@ -21,7 +21,8 @@
       background-color: #0B1E3F;
       padding: 20px 0;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
       text-align: center;
     }
@@ -35,19 +36,20 @@
     .header-text {
       color: white;
       font-size: 24px;
+      margin-top: 10px;
     }
 
     .nav-links {
-      text-align: center;
-      margin-top: 20px;
       display: flex;
       justify-content: space-between;
       width: 100%;
+      margin-top: 10px;
+      padding: 0 30px;
     }
 
     .nav-links a {
       margin: 0 15px;
-      color: #0B1E3F; /* Azul del encabezado */
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
       font-size: 18px;
@@ -163,17 +165,15 @@
   <div class="header">
     <img src="gestoria-numera-1994.png" alt="Logotipo Gestoría Númera" class="logo"/>
     <div class="header-text">Números claros, futuro seguro</div>
-    <img src="gestoria-numera-1994.png" alt="Logotipo Gestoría Númera" class="logo"/>
-  </div>
-
-  <div class="nav-links">
-    <a href="quienes-somos.html">Quienes Somos</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#horario">Horario</a>
-    <a href="#dias-cierre">Días de Cierre</a>
-    <a href="#direccion">Dirección</a>
-    <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+    <div class="nav-links">
+      <a href="quienes-somos.html">Quienes Somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#horario">Horario</a>
+      <a href="#dias-cierre">Días de Cierre</a>
+      <a href="#direccion">Dirección</a>
+      <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+    </div>
   </div>
 
   <div class="card" id="servicios">
