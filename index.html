@@ -18,37 +18,126 @@
     }
 
     .header {
-      background-color: #0B1E3F; /* Color principal */
+      background-color: #0B1E3F;
       text-align: center;
-      padding: 20px 0;
+      padding: 30px 0;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      gap: 30px;
     }
 
     .logo {
-      max-width: 150px;
+      max-width: 250px;
+      width: 100%;
       height: auto;
     }
 
     .header-text {
       color: white;
       font-size: 24px;
-      font-weight: bold;
     }
 
-    .header .logo-right {
-      max-width: 150px;
-      height: auto;
+    .card {
+      background-color: white;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
 
-    /* Añadir un estilo extra a la parte superior */
-    .header a {
-      text-decoration: none;
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #0B1E3F;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    strong {
+      color: #0B1E3F;
+    }
+
+    /* Formulario de cita */
+    .appointment {
+      background-color: #0B1E3F;
       color: white;
+      padding: 40px 20px;
+      text-align: center;
     }
 
+    .appointment h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: white;
+      color: #0B1E3F;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Calendario */
+    .closed-days {
+      margin-top: 30px;
+      text-align: center;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .closed-days h3 {
+      color: #0B1E3F;
+    }
+
+    .calendar {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .calendar iframe {
+      width: 100%;
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 20px;
+      }
+
+      .appointment h2 {
+        font-size: 20px;
+      }
+
+      input, textarea {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -56,7 +145,60 @@
   <div class="header">
     <img src="gestoria-numera-1994.png" alt="Logotipo Gestoría Númera" class="logo"/>
     <div class="header-text">Números claros, futuro seguro</div>
-    <img src="gestoria-numera-1994.png" alt="Logotipo Gestoría Númera" class="logo-right"/>
+    <img src="gestoria-numera-1994.png" alt="Logotipo Gestoría Númera" class="logo"/>
+  </div>
+
+  <div class="card">
+    <h3>Servicios</h3>
+    <p><strong>Asesoría Integral</strong><br>
+       Tramitaciones Administrativas<br>
+       Impuestos y Declaraciones<br>
+       Seguros</p>
+
+    <h3>Eva Irene Fabra</h3>
+    <p>Fundadora y Directora General</p>
+
+    <h3>Contacto</h3>
+    <p>
+      <a href="mailto:gestorianúmera@gmail.com">Correo electrónico</a><br>
+      <a href="tel:+34923605202">Teléfono</a> / <a href="tel:+34923605202">Fax</a><br>
+      <a href="tel:+349678172303">Móvil: 678 172 303</a>
+    </p>
+
+    <h3>Horario</h3>
+    <p>Lunes a Viernes:<br>
+       09:00 - 14:00 / 16:00 - 18:00</p>
+
+    <h3>Días de cierre</h3>
+    <div class="closed-days">
+      <h3>La gestoría estará cerrada los siguientes días:</h3>
+      <p>1 de enero - Año Nuevo<br>
+         6 de enero - Reyes Magos<br>
+         Semana Santa (Viernes Santo)<br>
+         1 de mayo - Día del Trabajo<br>
+         15 de agosto - Asunción de la Virgen<br>
+         12 de octubre - Día de la Hispanidad<br>
+         8 de diciembre - Inmaculada Concepción<br>
+         25 de diciembre - Navidad<br>
+         Fiesta de la Magdalena (Castellón)
+      </p>
+    </div>
+
+    <h3>Dirección</h3>
+    <p>C/ Escalante nº25 bajo<br>
+       12006 Castellón</p>
+  </div>
+
+  <div class="appointment">
+    <h2>Solicita tu cita</h2>
+    <form action="https://formsubmit.co/gestorianumera@gmail.com" method="POST">
+      <input type="text" name="Nombre" placeholder="Tu nombre" required>
+      <input type="email" name="Email" placeholder="Tu email" required>
+      <input type="tel" name="Teléfono" placeholder="Tu teléfono">
+      <input type="date" name="Fecha de cita" placeholder="Seleccionar cita" required>
+      <textarea name="Comentarios" placeholder="Motivo de la cita (opcional)" rows="4"></textarea>
+      <input type="submit" value="Enviar solicitud">
+    </form>
   </div>
 
 </body>
