@@ -8,46 +8,65 @@
     body {
       background-color: #0B1E3F; /* azul oscuro */
       color: white;
-      text-align: center;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
       padding: 20px;
     }
-    img.logo {
+
+    .logo {
       max-width: 300px;
+      width: 100%;
       height: auto;
-      margin-top: 20px;
+      margin: 30px 0;
     }
-    p, h3 {
+
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 10px;
       text-align: left;
-      display: inline-block;
-      max-width: 500px;
-      margin: 10px 0;
+    }
+
+    p {
+      margin: 0 0 20px 0;
+      text-align: left;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
   <img src="GESTORÍA NÚMERA 1994.png" alt="Logotipo Gestoría Númera" class="logo"/>
 
-  <p><strong>Asesoría Integral</strong><br>
-     Tramitaciones Administrativas<br>
-     Impuestos y Declaraciones<br>
-     Seguros</p>
+  <div class="container">
+    <p><strong>Asesoría Integral</strong><br>
+       Tramitaciones Administrativas<br>
+       Impuestos y Declaraciones<br>
+       Seguros</p>
 
-  <h3>Eva Irene Fabra</h3>
-  <p>Fundadora y Directora General</p>
+    <h3>Eva Irene Fabra</h3>
+    <p>Fundadora y Directora General</p>
 
-  <h3>Contacto</h3>
-  <p>Tel. / Fax: 923 605 202<br>
-     Móvil: 678 172 303<br>
-     Email: gestoríanúmera@gmail.com<br>
-     Web: www.gestoríanúmera.es</p>
+    <h3>Contacto</h3>
+    <p>Tel. / Fax: 923 605 202<br>
+       Móvil: 678 172 303<br>
+       Email: gestoríanúmera@gmail.com<br>
+       Web: www.gestoríanúmera.es</p>
 
-  <h3>Horario</h3>
-  <p>Lunes a Viernes:<br>
-     09:00 - 14:00 / 16:00 - 18:00</p>
+    <h3>Horario</h3>
+    <p>Lunes a Viernes:<br>
+       09:00 - 14:00 / 16:00 - 18:00</p>
 
-  <h3>Dirección</h3>
-  <p>C/ Escalante nº25 bajo<br>
-     12006 Castellón</p>
+    <h3>Dirección</h3>
+    <p>C/ Escalante nº25 bajo<br>
+       12006 Castellón</p>
+  </div>
 </body>
 </html>
