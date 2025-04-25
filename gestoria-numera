@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestoría Númera</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f6f6;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+    }
+    .info, .contacto, .horario {
+      margin-bottom: 20px;
+    }
+    .logo {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .logo img {
+      max-width: 200px;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GESTORÍA NÚMERA</h1>
+    <p>DESDE 1994</p>
+  </header>
+
+  <section>
+    <div class="logo">
+      <!-- Aquí puedes poner tu logotipo -->
+      <img src="logo.png" alt="Logotipo Gestoría Númera">
+    </div>
+
+    <div class="info">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Asesoría Integral</li>
+        <li>Tramitaciones Administrativas</li>
+        <li>Impuestos y Declaraciones</li>
+        <li>Seguros</li>
+      </ul>
+    </div>
+
+    <div class="fundadora">
+      <h2>Fundadora</h2>
+      <p><strong>EVA IRENE FABRA</strong><br>Fundadora y Directora General</p>
+    </div>
+
+    <div class="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Web:</strong> <a href="http://www.gestoríanúmera.es" target="_blank">www.gestoríanúmera.es</a></p>
+      <p><strong>Email:</strong> gestoríanúmera@gmail.com</p>
+      <p><strong>Tel. / Fax:</strong> 923 605 202</p>
+      <p><strong>Móvil:</strong> 678 172 303</p>
+    </div>
+
+    <div class="horario">
+      <h2>Horario</h2>
+      <p>Lunes a Viernes:<br>09:00 - 14:00 / 16:00 - 18:00</p>
+    </div>
+
+    <div class="direccion">
+      <h2>Dirección</h2>
+      <p>C/ Escalante nº25 bajo<br>12006 Castellón</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gestoría Númera. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
