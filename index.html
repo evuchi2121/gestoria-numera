@@ -19,11 +19,11 @@
 
     .header {
       background-color: #0B1E3F;
-      text-align: center;
-      padding: 30px 0;
+      padding: 20px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      text-align: center;
     }
 
     .logo {
@@ -35,6 +35,23 @@
     .header-text {
       color: white;
       font-size: 24px;
+    }
+
+    .nav-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      color: #0B1E3F; /* Azul del encabezado */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
     }
 
     .card {
@@ -60,10 +77,9 @@
     }
 
     strong {
-      color: #0B1E3F; /* El color de "Tramitaciones Administrativas" */
+      color: #0B1E3F;
     }
 
-    /* Formulario de cita */
     .appointment {
       background-color: #0B1E3F;
       color: white;
@@ -102,7 +118,6 @@
       background-color: #e0e0e0;
     }
 
-    /* Calendario */
     .closed-days {
       margin-top: 30px;
       text-align: center;
@@ -148,27 +163,39 @@
     <img src="gestoria-numera-1994.png" alt="Logotipo Gestoría Númera" class="logo"/>
   </div>
 
-  <div class="card">
+  <div class="nav-links">
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#horario">Horario</a>
+    <a href="#dias-cierre">Días de Cierre</a>
+    <a href="#direccion">Dirección</a>
+    <a href="#cita">Solicitar Cita</a>
+  </div>
+
+  <div class="card" id="servicios">
     <h3>Servicios</h3>
-    <p><strong>Asesoría Integral</strong><br>
+    <p>Asesoría Integral<br>
        Tramitaciones Administrativas<br>
        Impuestos y Declaraciones<br>
        Seguros</p>
+  </div>
 
-    <h3>Eva Irene Fabra</h3>
-    <p>Fundadora y Directora General</p>
-
+  <div class="card" id="contacto">
     <h3>Contacto</h3>
     <p>
       <a href="mailto:gestorianúmera@gmail.com">Correo electrónico</a><br>
       <a href="tel:+34923605202">Teléfono</a> / <a href="tel:+34923605202">Fax</a><br>
       <a href="tel:+349678172303">Móvil: 678 172 303</a>
     </p>
+  </div>
 
+  <div class="card" id="horario">
     <h3>Horario</h3>
     <p>Lunes a Viernes:<br>
        09:00 - 14:00 / 16:00 - 18:00</p>
+  </div>
 
+  <div class="card" id="dias-cierre">
     <h3>Días de cierre</h3>
     <div class="closed-days">
       <h3>La gestoría estará cerrada los siguientes días:</h3>
@@ -183,13 +210,15 @@
          Fiesta de la Magdalena (Castellón)
       </p>
     </div>
+  </div>
 
+  <div class="card" id="direccion">
     <h3>Dirección</h3>
     <p>C/ Escalante nº25 bajo<br>
        12006 Castellón</p>
   </div>
 
-  <div class="appointment">
+  <div class="appointment" id="cita">
     <h2>Solicita tu cita</h2>
     <form action="https://formsubmit.co/gestorianumera@gmail.com" method="POST">
       <input type="text" name="Nombre" placeholder="Tu nombre" required>
